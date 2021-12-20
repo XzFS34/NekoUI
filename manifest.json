@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Created by : Farhan\nTwitter : @FarhanX",
+        "name": "§lNeko§bUI",
+        "uuid": "2a42c419-93fc-44ff-8301-1bb75cc5e9f0",
+        "version": [2, 6, 0],
+        "min_engine_version": [1, 17, 10]
+    },
+    "modules": [
+        {
+            "description": "Created by : Farhan\nTwitter : @FarhanX",
+            "type": "resources",
+            "uuid": "173e4f52-f5f5-4a96-8b2e-c4f219c4be42",
+            "version": [2, 6, 0]
+        }
+    ]
+}

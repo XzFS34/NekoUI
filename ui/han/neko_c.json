@@ -1,0 +1,126 @@
+{
+    "namespace": "neko_c",
+
+    //bg 
+
+    // Untuk Alpha
+    // >1,0 Semakin Jelas
+    // <1.0 Semakin tidak jelas :V
+
+    "bg_bottom": {
+      "type":  "image",
+      "alpha": 0.75,
+      "texture": "textures/ui-x/bg/bg_bottom",
+      "size": [ "100%" , "100%" ]
+    },
+
+    "bg_2": {
+      "type":  "image",
+      "alpha": 0.75,
+      "texture": "textures/ui-x/bg/bg",
+      "size": [ "100%" , "100%" ]
+    },
+
+    "bg_profile_panel_2": {
+      "type":  "image",
+      "texture": "textures/ui-x/bg/bg_profile_panel",
+      "size": [ "100%" , "100%" ]
+    },
+
+    // Background untuk panel tab
+    "bg_2_han": {
+      "type":  "image",
+      "texture": "textures/ui-x/bg/bg_2",
+      "size": [ "100%" , "100%" ]
+    },
+
+    "bg_3": {
+      "type":  "image",
+      "texture": "textures/ui-x/bg/bg_3",
+      "size": [ "100%" , "100%" ]
+    },
+
+    "bg_4": {
+      "type":  "image",
+      "texture": "textures/ui-x/bg/bg_4",
+      "size": [ "100%" , "100%" ]
+    },
+
+    /////////////////////////////////////////////////
+    ///                                           ///
+    /// Background  play,main,settings            ///
+    ///                                           ///
+    /////////////////////////////////////////////////
+
+    "bg_main_screen": {
+      "type": "image",
+      "layer": 1,
+      "fill": true,
+      "texture": "textures/ui-x/bg_main_screen"
+    },
+
+    "bg_main_screen_char": {
+      "type": "image",
+      "layer": 2,
+      "texture": "textures/ui-x/bg_main_screen_char",
+      "fill": true
+    },
+
+    "bg_settings_screen": {
+      "type": "image",
+      "texture": "textures/ui-x/bg_settings_screen",
+      "layer": 2,
+      "fill": true
+    },
+
+    "bg_play_screen": {
+      "type": "image",
+      "layer": 1,
+      "texture": "textures/ui-x/bg_play_screen",
+      "fill": true
+    },
+
+
+    ///////////////////////////////////////
+    //
+    // MAIN UI
+    //
+    ///////////////////////////////////////
+
+    "weebs@loli.label": {
+      "layer": 5,
+      "font_size": "small",
+      "text": "",
+      "font_type": "MinecraftTen"
+    },
+
+    "fxn_label": {
+      "type": "label",
+      "size": [ "100% - 10px", "default" ],
+      "text_alignment": "center",
+      "font_type": "MinecraftTen",
+      "shadow": false,
+      "offset": [ 15, 0 ]
+    },
+    
+    ///////////////////////////////////////
+    //
+    // S E T T I N G S
+    //
+    ///////////////////////////////////////
+
+    "logo_ui": { "type": "image", "texture": "textures/ui-x/icon-new/title", "size": [ "100%" , 80 ]},
+    // Versi
+    "created_by_title@neko_c.fxn_label": { "text": "UI Created By:"},
+    "created_by@neko_c.fxn_label": { "font_size": "large", "text": "Farhan"},
+    "social_media_1@neko_c.fxn_label": { "text": "Instagram : @handaffa91"},
+    "social_media_2@neko_c.fxn_label": { "text": "Twitter : FarhanX"},
+    "social_media_3@neko_c.fxn_label": { "text": "" },
+    "social_media_4@neko_c.fxn_label": { "text": "" },
+
+    // Build
+    "neko_version_title@neko_c.fxn_label": { "text": "UI Version :" },
+    "neko_version_number@neko_c.fxn_label": { "font_size": "large", "text": "2.6.13 | Holo" }, // ( Version )| ( Codename )
+    "neko_lastest_update@neko_c.fxn_label": { "text": "20 Desember 2021"},
+    "neko_uuid@neko_c.fxn_label": { "text": "2a42c419-93fc-44ff-8301-1bb75cc5e9f0"}
+}

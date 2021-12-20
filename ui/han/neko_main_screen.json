@@ -1,0 +1,175 @@
+{
+  "namespace": "rem",
+
+  "panel_icon_1": {
+    "type": "panel",
+    "size": [ "110px" , "30px" ]
+  },
+
+  "panel_icon_2": {
+    "type": "panel",
+    "size": "$han_size",
+    "$han_size|default": [ "100%" , "28px"]
+  },
+
+  "panel_icon_2_a": {
+    "type": "panel",
+    "size": [ "100%" , "28px"]
+  },
+
+  "panel_xbox": {
+    "type": "panel",
+    "size": [ "100% - 3px" , "35px"]
+  },
+
+  "button_dan_icon3": {
+    "layer": 5,
+    "type": "panel",
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "offset": [ -7 , 0 ],
+    "size": [ 100, "100% - 15px" ],
+    "controls": [
+      {
+       "stack_panel_1": {
+        "type": "stack_panel",
+        "size": [ "100%" , "100%c" ],
+        "orientation": "vertical",
+        "anchor_from": "bottom_right",
+        "anchor_to": "bottom_right",
+        "controls": [
+        { "minecraft_version@loli.minecraft_version": {}},
+          {
+            "jarak": {
+              "type": "panel",
+              "layer": 2,
+              "size": [ "100%", "2px" ]
+            }
+          },
+          { "panel_xbox@rem.panel_xbox": {"controls": [{ "xbox@rem.xbox": {}}], "bindings": [{ "binding_name": "#sign_in_visible", "binding_name_override": "#visible" }]}}          ]
+        }
+      }
+    ]
+  },
+
+  "button_and_icon_2": {
+    "type": "panel",
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "offset": [ 7 , 0 ], // X Y
+    "size": [ 98 , "100% - 30px" ],
+    "controls": [
+      {
+        "stack_panel": {
+          "type": "stack_panel",
+          "size": [ "100%", "100%c" ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "orientation": "vertical", // Horizontal & Vertical
+          "animation_reset_name": "screen_animation_reset",
+          "anims": [
+            "@anim_test.screen_exit_animation_push_offset",
+            "@anim_test.screen_exit_animation_pop_offset",
+            "@anim_test.screen_entrance_animation_push_offset",
+            "@anim_test.screen_entrance_animation_pop_offset"
+          ],
+          "controls": [
+            { "panel_05@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.settings_button": {}}]}},
+            { "panel_04@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.profile_button": {}}]}},
+            { "panel_03@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.store_button": {}}]}},
+            { "panel_02@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.achievements_button": {}}]}},
+            { "panel_06@rem.panel_icon_2_a": {"controls":[{ "icon1@neko_button.exit_button": {}}]}}
+          ]
+        }
+      }
+    ]
+  },
+
+  "xbox@neko_c.bg_3": {
+    "alpha": "@anim_test.anim_bg_1",
+    "layer": 5,
+    "size": [ "100% - 2px" , "100% - 2px"],
+    "controls": [
+      {
+        "xbox_panel": {
+          "type": "stack_panel",
+          "size": [ "100%" , "100%c" ],
+          "orientation" : "vertical",
+          "anchor_from": "middle",
+          "anchor_to": "middle",
+          "controls": [
+            {
+              "xbox_icon":{
+                "type": "panel",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "size": [ "100%" , "20px" ],
+                "controls": [
+                  {
+                    "xbox_icon_0": {
+                      "type": "image",
+                      "layer": 2,
+                      "texture": "textures/ui-x/icon-new/warn",
+                      "size": [ 12 , 12 ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "xbox_label":{
+                "type": "panel",
+                "size": [ "100%" , "fill" ],
+                "controls": [
+                  {
+                    "xbox_label_0": {
+                      "type": "label",
+                      "anchor_from": "middle_left",
+                      "anchor_to": "middle_left",
+                      "layer": 2,
+                      "font_scale_factor": 0.7,
+                      "font_type": "MinecraftTen",
+                      "text_alignment": "center",
+                      "color": "black",
+                      "size": [ "100% - 10px" , "default" ],
+                      "text": "BELUM LOGIN XBOX"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+    "stacked_row_0": {
+      "type": "panel",
+      "size": [ "27px" , "24px" ]
+    },
+
+  "skin_panel": {
+    "layer": 5,
+    "type": "panel",
+    "anchor_to": "middle",
+    "anchor_from": "middle",
+    "size": [ 200 , 200 ],
+    "offset": [ 0 , 0 ],
+    "controls": [
+      { "viewer_panel@start.skin_viewer_panel": {} }
+    ]
+  },
+
+  "button_panel": {
+  "type": "panel",
+  "controls": [      
+        { "panel_01@rem.panel_icon_1": {"anchor_from": "bottom_middle", "anchor_to": "bottom_middle", "offset": [ 0 , -10 ] ,"controls":[{ "icon1@neko_button.play_button": {}}], "bindings": [{ "binding_name": "#feedback_enable", "binding_name_override": "#enable" }]}},
+        { "nametag_panel@loli.nametag_panel": {}},
+        { "bg_main_screen_char@neko_c.bg_main_screen_char": {}},
+        { "skin_panel@rem.skin_panel": {}},
+        { "button_dan_icon@rem.button_dan_icon": {}},
+        { "button_and_icon_2@rem.button_and_icon_2": {}}
+      ]
+    }
+  }
